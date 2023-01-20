@@ -26,11 +26,7 @@ int parseInput(FILE *fh, Object *objects) {
         v3_setZeros(current->position);
         v3_setZeros(current->specularColor);
         current->reflectivity = 0;
-        /*
-        current->specularColor[0] = 1;
-        current->specularColor[1] = 1;
-        current->specularColor[2] = 1;
-        */
+    
         if (strcmp(objectType, "camera,") == 0) {
             current->height = 0;
             current->width = 0;
